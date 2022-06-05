@@ -25,7 +25,6 @@ class Products extends React.Component {
                 addCartDate: Date.now()
             })
         })
-
         // alert("Ürünü sepete başarıyla eklediniz - " + e.target.elements.productName.value);
     }
 
@@ -38,16 +37,14 @@ class Products extends React.Component {
     }
 
     componentDidMount() {
-
-
         axios.get('/getAllProducts').then(response => {
             this.setState({products: response.data});
         });
     }
 
     handleSubmit(e) {
-        this.addToCart(e);
         e.preventDefault();
+        this.addToCart(e);   
     }
 
     render() {
@@ -82,7 +79,4 @@ class Products extends React.Component {
     }
 }
 
-/*
-
- */
 export default Products;
