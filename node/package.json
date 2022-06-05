@@ -1,0 +1,19 @@
+{
+  "name": "batuhanproje",
+  "version": "1.0.0",
+  "description": "mehmetunluicinproje",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Batuhan Özkoç",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^7.5.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "uuid": "^8.3.2"
+  }
+}
